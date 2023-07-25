@@ -1,7 +1,7 @@
 pipeline{
     agent any
         stages{
-                stage ('1-clone'){
+                stage ('1-practice'){
                     steps{
                         checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'groupgit', url: 'https://github.com/AppGroup2/jenkinsproject2.git']])
 
