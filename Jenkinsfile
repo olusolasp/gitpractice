@@ -15,7 +15,7 @@ pipeline{
                                 sh 'echo $SHELL'
                             }
                         }
-                        stage('Yomi'){
+                        stage('Tolani'){
                             steps{
                             sh 'sudo systemctl status jenkins'
                             }
@@ -24,12 +24,12 @@ pipeline{
                 }
                 stage('3-Group Parallel job'){
                     parallel{
-                        stage('Aubin'){
+                        stage('Kayode'){
                             steps{
                                 sh 'ls'
                             }
                         }
-                        stage('Afeez'){
+                        stage('Alade'){
                             steps{
                                 sh 'pwd'
                             }
@@ -38,7 +38,7 @@ pipeline{
                 }
                 stage('4-Group Parallel job'){
                     parallel{
-                        stage('Olu'){
+                        stage('Gabriel'){
                             steps{
                                 sh 'lscpu'
                             }
